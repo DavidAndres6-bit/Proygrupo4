@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    color: red;
+    text-align: center;
+    padding: 10px;
+}
+#promo {
+    display: flex;
+    justify-content: space-between; /*separar los elementos*/
+    align-items: center;
+    padding: 20px;
+    margin-right: 55px;
+    margin-left: 60px;
+}
+#texto2{
+    text-align: right;
+    margin-left: 5px;
+}
+#descuento {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#producto {
+    display: flex;  /*oorganiza los elementos*/
+    justify-content: center;
+    align-items: flex-start;  /*alinea los elementos en la parte superior del contenedor*/  
+    gap: 40px;
+    padding: 40px;
+}
+#fotos {
+    width: 40%;
+}
+#fotos img {
+    width: 100%;
+    border-radius: 10px; /*para redondear los bordes*/
+    cursor: pointer; /*para que se ponga el raton como mano*/
+}
+
+#info {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#precio-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*separar el precio y el logo*/
+}
+.precio {
+    font-size: 24px;
+    font-weight: bold; /*texto en negrita*/
+}
+#logo {
+    width: 100px;
+}
+.detalle-precio {
+    font-size: 14px;
+    color: gray;
+}
+#tallas {
+    margin-top: 20px;
+}
+.botones-talla {
+    display: flex; /*para que esten todos en linea*/
+    gap: 10px;
+}
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button.cesta {
+    margin-top: 15px;
+    width: 100%;
+    background-color: green;
+}
+button:hover {
+    background-color: #555;
+}
+#detalles {
+    margin-top: 20px;
+}
