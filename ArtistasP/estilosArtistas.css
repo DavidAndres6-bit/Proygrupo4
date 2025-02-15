@@ -1,0 +1,121 @@
+/* ============================= */
+/*       RESET GENERAL         */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ============================= */
+/*         BODY                */
+/* ============================= */
+body {
+    background-color: whitesmoke;
+}
+
+/* ============================= */
+/*       HEADER Y MENÚ         */
+/* ============================= */
+header {
+    background-color: #121921;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5px 2px;
+}
+
+.logo img {
+    width: 65px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    padding-right: 100px;
+}
+
+.menu li:hover {
+    color: rgba(166, 22, 22, 0.856); /* Texto rojo al pasar el mouse */
+    cursor: pointer;
+}
+
+/* ============================= */
+/*       CARRUSEL DE IMÁGENES  */
+/* ============================= */
+.carrusel {
+    width: 100%;           /* Ocupa todo el ancho */
+    height: 300px;         /* Altura del carrusel (ajusta según necesites) */
+    overflow: hidden;      /* Oculta el contenido que se sale del contenedor */
+    position: relative;
+    /* Sin márgenes para que quede pegado al header y a los laterales */
+}
+
+.carrusel-contenido {
+    display: flex;
+    width: 400%;           /* 4 imágenes = 400% */
+    animation: deslizar 20s infinite linear;  /* Duración total 20s */
+}
+
+.carrusel-contenido img {
+    width: 100%;           /* Cada imagen ocupa el 100% del contenedor */
+    object-fit: cover;     /* La imagen se recorta para cubrir todo el contenedor sin deformarse */
+}
+
+/* ============================= */
+/*         KEYFRAMES           */
+/* ============================= */
+/*
+  Propuesta:
+  - Imagen 1: se mantiene de 0% a 22%
+  - Transición de imagen 1 a 2: de 22% a 25%
+  - Imagen 2: se mantiene de 25% a 47%
+  - Transición de imagen 2 a 3: de 47% a 50%
+  - Imagen 3: se mantiene de 50% a 72%
+  - Transición de imagen 3 a 4: de 72% a 75%
+  - Imagen 4: se mantiene de 75% a 97%
+  - Transición de imagen 4 a 1: de 97% a 100%
+*/
+@keyframes deslizar {
+    /* Imagen 1 estática */
+    0% {
+        transform: translateX(0%);
+    }
+    22% {
+        transform: translateX(0%);
+    }
+    /* Transición rápida a imagen 2 */
+    25% {
+        transform: translateX(-100%);
+    }
+    /* Imagen 2 estática */
+    47% {
+        transform: translateX(-100%);
+    }
+    /* Transición rápida a imagen 3 */
+    50% {
+        transform: translateX(-200%);
+    }
+    /* Imagen 3 estática */
+    72% {
+        transform: translateX(-200%);
+    }
+    /* Transición rápida a imagen 4 */
+    75% {
+        transform: translateX(-300%);
+    }
+    /* Imagen 4 estática */
+    97% {
+        transform: translateX(-300%);
+    }
+    /* Transición rápida de regreso a imagen 1 */
+    100% {
+        transform: translateX(0%);
+    }
+}
