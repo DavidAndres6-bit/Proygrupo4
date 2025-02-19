@@ -24,6 +24,8 @@ header {
 }
 
 .logo img {
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 65px;
 }
 
@@ -33,18 +35,23 @@ header {
 }
 
 .menu li {
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     padding-right: 100px;
+}
+
+.menu li a {
+    color: inherit; /* Hereda el color del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
 }
 
 .menu li:hover {
     color: rgba(166, 22, 22, 0.856); /* Texto rojo al pasar el mouse */
     cursor: pointer;
 }
-.seleccion {
+.menu .seleccion {
     color: rgba(166, 22, 22, 0.856); /* Texto rojo al pasar el mouse */
-
 }
 /* ============================= */
 /*     SECCIÓN ARTIST INFO       */
@@ -54,17 +61,16 @@ body {
     
 }
 .artist-info {
-    background: linear-gradient(to bottom, #E0E0E0, #f5f5f5e5, #ffffffe4);    
+    background: linear-gradient(to bottom, #E0E0E0, #f5f5f5e5, #ffffffe4);
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    box-sizing: border-box;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    overflow: hidden;
-    border: 10px solid transparent; /* Añadir un borde transparente */
+    box-sizing: border-box;
+   
 }
 
 .artist-info .artist-image {
@@ -100,9 +106,7 @@ body {
     color: #333;
 }
 
-.artist-info .artist-text h2 {
-    margin-bottom: 10px;
-}
+
 
 .artist-info .artist-text p {
     line-height: 1.5;
@@ -117,46 +121,52 @@ body {
 }
 .cuerpo{
     margin-top: 50px;
+    margin-bottom: 50px;
     background-color: white; /* Fondo blanco */
     color: black;
     /* width: 60%; Ancho de la sección */
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
-   margin-left: 300px;
-    margin-right: 300px;
- 
+   margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Roboto', sans-serif;
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 .categoria {
+    text-decoration: none;
     background-color: rgba(163, 163, 163, 0.738);
     font-size: 30px;
     padding: 2px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 20px;
-    margin : 20px 200px 20px 200px;
+    margin : 20px 100px 20px 150px;
     border-radius: 12px;
     font-family: 'Roboto', sans-serif;
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 .artista {
+    text-decoration: none;
+
     background-color: rgba(163, 163, 163, 0.738);
     font-size: 30px;
     padding: 2px;
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 20px;
-    margin : 20px 300px 20px 200px;
+    margin : 20px 150px 20px 150px;
     border-radius: 12px;
     font-family: 'Roboto', sans-serif;
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 .video {
     margin-top: 20px;
-    margin-left: 400px;
-    margin-right: auto;
     display: block;
-    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
 }
 .texto-inicial {
     font-family: 'Roboto', sans-serif;
@@ -166,6 +176,82 @@ body {
     margin-top: 40px;
     margin-bottom: 20px;
     text-align: justify;
-    margin-left: 200px;
-    margin-right: 300px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
+
+
+
+/***************************************************************************************/
+
+/* Contenedor del grid  miembros */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columnas */
+    gap: 40px; /* Espaciado entre las tarjetas */
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1100px; /* Tamaño máximo */
+}
+
+/* Cada tarjeta */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover (zoom y sombra más intensa) */
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Imágenes cuadradas */
+.grid-item img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Títulos de las tarjetas */
+.grid-item p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+  
+/* Contenedor de slides */
+.slides {
+    display: flex;
+    width: 100%; /* 3 slides x 100% */
+    transition: transform 0.5s ease;
+}
+  
+  /* Cada slide */
+  .slide {
+    width: 900px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+  }
+  
+  

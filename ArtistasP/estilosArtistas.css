@@ -46,76 +46,124 @@ header {
     cursor: pointer;
 }
 
+.cuerpo{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white; /* Fondo blanco */
+    color: black;
+    /* width: 60%; Ancho de la sección */
+    padding: 20px;
+    border-radius: 20px;
+   margin-left: 200px;
+    margin-right: 200px;
+ 
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+.categoria {
+    text-decoration: none;
+    background-color: rgba(163, 163, 163, 0.738);
+    font-size: 30px;
+    padding: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin : 20px 150px 20px 150px;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+/* Contenedor del grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espaciado entre las tarjetas */
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px; /* Tamaño máximo */
+}
+
+/* Cada tarjeta */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover (zoom y sombra más intensa) */
+.grid-item:hover {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Imágenes cuadradas */
+.grid-item img {
+    width: 100%; /* Ocupar el contenedor */
+    max-width: 250px; /* Tamaño máximo */
+    aspect-ratio: 1/1; /* Mantiene la imagen cuadrada */
+    object-fit: cover; /* Evita deformaciones */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Títulos de los artistas */
+.grid-item p {
+    font-family: 'Roboto', sans-serif;
+
+    margin-top: 10px;
+    font-size: 16px;
+    /* font-weight: bold; */
+    text-align: center;
+}
+
 /* ============================= */
 /*       CARRUSEL DE IMÁGENES  */
 /* ============================= */
-.carrusel {
-    width: 100%;           /* Ocupa todo el ancho */
-    height: 300px;         /* Altura del carrusel (ajusta según necesites) */
-    overflow: hidden;      /* Oculta el contenido que se sale del contenedor */
+ /* Contenedor principal del carrusel */
+.slider {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  /* Contenedor de las imágenes en línea */
+  .slides {
+    width: 400%; /* 4 imágenes en línea */
     position: relative;
-    /* Sin márgenes para que quede pegado al header y a los laterales */
-}
+    animation: slide 20s infinite;
+    
+  }
+  
+  /* Cada imagen se alinea horizontalmente con float */
+  .slides img {
+    float: left;
+    width: 25%;   /* Cada imagen ocupa el 25% del contenedor .slides */
+    height: 380px;
+    object-fit: cover; /* Ajusta la imagen para que se vea completa */
 
-.carrusel-contenido {
-    display: flex;
-    width: 400%;           /* 4 imágenes = 400% */
-    animation: deslizar 20s infinite linear;  /* Duración total 20s */
-}
-
-.carrusel-contenido img {
-    width: 100%;           /* Cada imagen ocupa el 100% del contenedor */
-    object-fit: cover;     /* La imagen se recorta para cubrir todo el contenedor sin deformarse */
-}
-
-/* ============================= */
-/*         KEYFRAMES           */
-/* ============================= */
-/*
-  Propuesta:
-  - Imagen 1: se mantiene de 0% a 22%
-  - Transición de imagen 1 a 2: de 22% a 25%
-  - Imagen 2: se mantiene de 25% a 47%
-  - Transición de imagen 2 a 3: de 47% a 50%
-  - Imagen 3: se mantiene de 50% a 72%
-  - Transición de imagen 3 a 4: de 72% a 75%
-  - Imagen 4: se mantiene de 75% a 97%
-  - Transición de imagen 4 a 1: de 97% a 100%
-*/
-@keyframes deslizar {
-    /* Imagen 1 estática */
-    0% {
-        transform: translateX(0%);
+  }
+  
+  /* Keyframes para la animación */
+  @keyframes slide {
+    0%, 20% {
+      transform: translateX(0%);
     }
-    22% {
-        transform: translateX(0%);
+    25%, 45% {
+      transform: translateX(-25%);
     }
-    /* Transición rápida a imagen 2 */
-    25% {
-        transform: translateX(-100%);
+    50%, 70% {
+      transform: translateX(-50%);
     }
-    /* Imagen 2 estática */
-    47% {
-        transform: translateX(-100%);
+    75%, 95% {
+      transform: translateX(-75%);
     }
-    /* Transición rápida a imagen 3 */
-    50% {
-        transform: translateX(-200%);
-    }
-    /* Imagen 3 estática */
-    72% {
-        transform: translateX(-200%);
-    }
-    /* Transición rápida a imagen 4 */
-    75% {
-        transform: translateX(-300%);
-    }
-    /* Imagen 4 estática */
-    97% {
-        transform: translateX(-300%);
-    }
-    /* Transición rápida de regreso a imagen 1 */
     100% {
-        transform: translateX(0%);
+      transform: translateX(0%);
     }
-}
+  }
+  
