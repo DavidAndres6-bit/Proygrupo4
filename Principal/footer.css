@@ -1,0 +1,26 @@
+footer {
+    background: #121921;
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .suscribirse input {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  .suscribirse button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
