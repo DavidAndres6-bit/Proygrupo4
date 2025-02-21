@@ -64,13 +64,14 @@ header {
 }
 #fotos {
     width: 40%;
-    padding: 20px;
+    display: flex;
+    
 }
 #fotos img {
-    
     width: 100%;
     border-radius: 10px; /*para redondear los bordes*/
     cursor: pointer; /*para que se ponga el raton como mano*/
+    
 }
 
 #info {
