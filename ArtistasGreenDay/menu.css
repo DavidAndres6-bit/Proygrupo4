@@ -1,0 +1,42 @@
+
+/* ============================= */
+/*       HEADER Y MENÚ         */
+/* ============================= */
+header {
+    background-color: #121921;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5px 2px;
+}
+
+.logo img {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 65px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    padding-right: 100px;
+}
+
+.menu li a {
+    color: inherit; /* Hereda el color del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.menu li:hover {
+    color: rgba(166, 22, 22, 0.856); /* Texto rojo al pasar el mouse */
+    cursor: pointer;
+}
+.menu .seleccion {
+    color: rgba(166, 22, 22, 0.856); /* Texto rojo al pasar el mouse */
+}

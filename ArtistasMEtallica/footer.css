@@ -1,0 +1,42 @@
+footer {
+  background: #121921;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 30px 0; /* Reducido el espacio inferior */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: left;
+}
+
+.footer-right p {
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: right;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: red; /* Puedes cambiar el color al que prefieras */
+  }
