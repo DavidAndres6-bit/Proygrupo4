@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;  /* Para asegurarnos de que no haya márgenes o relleno accidentales*/
+    text-decoration: none;
+    list-style: none; /*Para que las listas se vean sin puntos, decoraciones, subrayados, etc.)*/
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+.margenVideo{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.titulos{
+    background-color: lightslategrey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding: 2px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-left: 200px; /*Ajustes de posición de los títulos*/
+    margin-right : 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+
+
+
