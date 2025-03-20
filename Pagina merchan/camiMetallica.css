@@ -1,9 +1,11 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Aplicar un margen y un padding de 0 a todos los elementos, y establecer la fuente */
+* {
     margin: 0px;
     padding: 0px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Electrolize', sans-serif;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: gainsboro;
@@ -18,25 +20,7 @@ header {
     padding: 0.5px 2px;
 }
 
-.logo img {
-    width: 65px;
-}
 
-.menu ul {
-    display: flex;
-    align-items: center;
-}
-
-.menu li {
-    font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
-    padding-right: 100px;
-}
-
-.menu li:hover {
-    color: rgba(166, 22, 22, 0.856); /* Texto rojo al pasar el raton */
-   
-}
 #promo {
     display: flex;
     justify-content: space-between; /*separar los elementos*/
@@ -68,8 +52,8 @@ header {
     display: flex;
     
 }
-#fotos img {
-    width: 100%;
+#fotos .principal {
+    width:100%;
     border-radius: 10px; /*para redondear los bordes*/
     cursor: pointer; /*para que se ponga el raton como mano*/
     
