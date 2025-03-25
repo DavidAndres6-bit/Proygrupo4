@@ -18,27 +18,6 @@ header {
     align-items: center;
     padding: 0.5px 2px;
 }
-
-.logo img {
-    width: 65px;
-}
-
-.menu ul {
-    display: flex;
-    align-items: center;
-}
-
-.menu li {
-    font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
-    padding-right: 100px;
-}
-
-.menu li:hover {
-    color: rgba(166, 22, 22, 0.856); /* Texto rojo al pasar el mouse */
-   
-}
-
 h2{
     margin-top: 35px;
 }
@@ -48,7 +27,7 @@ body{
 }
 #imagenPrincipal img {
     width: 100%;
-    height: 350px; 
+    height: 400px; 
     
 }
 u {
@@ -62,7 +41,6 @@ u {
     display: inline-block;
    
 }
-
 #grupos {
     font-size: 30px;
     display: flex;
@@ -116,7 +94,6 @@ form {
     gap: 30px;
     
 }
-
 /* Título camisetas */
 .titulo1{
     font-family: "New Rocker", serif;  /*Estilo de letra de google fonts*/
@@ -126,16 +103,15 @@ form {
     width: 100%;
     height: 10px;
     top: 70%;
-    margin-left: 750px;
+    margin-left: 54%;
     font-size: 40px;
     
 }
-
 .titulo2{
     font-family: "New Rocker", serif;  
     position: absolute;
-    top:1450px;
-    margin-left: 750px;
+    top:190%;
+    margin-left: 54%;
     color: black;
     font-size: 40px;
     
@@ -151,7 +127,8 @@ form {
     max-width: 800px; /* Tamaño máximo */
     margin-left: 500px;
     position: absolute;
-    top: 85%;
+    top: 80%;
+    left: 5%;
     border-radius: 7px;
     background-color: white;
     padding: 40px;
@@ -168,6 +145,7 @@ form {
     margin-left: 500px;
     position: absolute;
     top:205%;  /*Espacio parte superior*/
+    left:5%;
     background-color: white; 
     border-radius: 7px;
     padding: 40px;
@@ -198,7 +176,6 @@ form {
     object-fit: cover; /* Evita deformaciones */
     border-radius: 10px; /* Bordes redondeados */
 }
-
 
 .nombre{
     font-size: 25px;
@@ -249,7 +226,8 @@ form {
 }
 
 #camisetas .grid-item:nth-child(4) figure::before {
-    
+    width: 100%; 
+    height: 68%; 
     background-image: url('camiGreendayAtras.png');
 }
 
@@ -333,48 +311,3 @@ body, html {
     width: 100%;
     overflow-x: hidden; /* Evita que se haga scroll horizontal */
 } 
-footer {
-    background: #121921;
-    color: #fff;
-    font-family: sans-serif;
-    padding: 30px 0;
-    text-align: center;
-    width: 100%;
-    margin-top: 870px;
-}
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-  }
-  
-  .footer-left p {
-    margin: 5px 0;
-    font-size: 14px;
-    text-align: left;
-  }
-  
-  .footer-right p {
-    margin: 5px 0;
-    font-size: 14px;
-    text-align: right;
-  }
-  
-  .social-links {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
-  }
-  
-  .social-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
-  }
-  
-  .social-links a:hover {
-    color: red; 
-  }  
-

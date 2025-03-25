@@ -2,8 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="PaginaMerchan_V3.css">
-    <link rel="stylesheet" href="Menu.css">
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link rel="stylesheet" href="PaginaMerchan_Css.css">
+    <link rel="stylesheet" href="./../ArtistasGreenDay/menu.css">
+    <link rel="stylesheet" href="./../Footer/Footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Merchandaising</title>
     <style>
@@ -19,18 +21,19 @@
         </div>
         <nav class="menu">
             <ul>
-                <li>Inicio</li>
-                <li class="sele">Artistas</li>
-                <li>Merchandising</li>
-                <li>Noticias</li>
+                <li><a href="./../Principal/index.html">Inicio</a</li>
+                <li><a href="./../ArtistasP/ArtistasP.html">Artistas</a></li>
+                <li><a href="./../Pagina merchan/PaginaMerchan.html">Merchandising</a></li>
+                <li><a href="./../Pagina noticias/PaginaNoticias.html">Noticias</a></li>
             </ul>
         </nav>
     </header>
    <div id = "imagenPrincipal">
-    <img src="imagenFondo.jpeg">
+    <img src="ImagenFondo.jpg">
 </div>
     <main>
-     <div id = "menu">
+        <!--Menu de las marcas y tallas-->
+        <div id = "menu">
         <form>
             <h2><u>Grupos</u></h2>
            <div id="grupos">
@@ -50,7 +53,7 @@
                
                 <h2><u>Tallas</u></h2>
                 
-                <!-- Contenedor de los checkboxes -->
+                <!-- Checkboks para las tallas -->
                 <div id="tallas">
                     <label><input type="checkbox"> 38</label>
                     <label><input type="checkbox"> 39</label>
@@ -67,6 +70,7 @@
         
         
     </div>
+    <!--Seccion de las camisetas-->
    <p class = "titulo1">Seccion de camisetas</p>
    <div id="camisetas">
         <div class="grid-container">
@@ -117,6 +121,7 @@
             </div>
         </div>
     </div>
+    <!--Seccion de las sudaderas-->
     <p class="titulo2">Sección de sudaderas</p>
     <div id="sudaderas">
       <div class="grid-container">
@@ -180,8 +185,8 @@
                     </a>
                 </div>
             </div>
-        </div>
+         </div>
       </footer>
-</main>
-</body>
+   </main>
+  </body>
 </html>

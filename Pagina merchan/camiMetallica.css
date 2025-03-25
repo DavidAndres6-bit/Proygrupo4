@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Aplicar un margen y un padding de 0 a todos los elementos, y establecer la fuente */
-* {
+*{
     margin: 0px;
     padding: 0px;
     font-family: 'Electrolize', sans-serif;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: gainsboro;
@@ -20,7 +18,6 @@ header {
     padding: 0.5px 2px;
 }
 
-
 #promo {
     display: flex;
     justify-content: space-between; /*separar los elementos*/
@@ -28,6 +25,7 @@ header {
     padding: 20px;
     margin-right: 55px;
     margin-left: 60px;
+    font-size: 25px;
 }
 #texto2{
     text-align: right;
@@ -52,8 +50,8 @@ header {
     display: flex;
     
 }
-#fotos .principal {
-    width:100%;
+#fotos img {
+    width: 100%;
     border-radius: 10px; /*para redondear los bordes*/
     cursor: pointer; /*para que se ponga el raton como mano*/
     
@@ -115,47 +113,3 @@ button:hover {
 .texto{
     margin-top: 10px;
 }
-footer {
-    background: #121921;
-    color: #fff;
-    font-family: sans-serif;
-    padding: 30px 0;
-    text-align: center;
-    width: 100%;
-    margin-top: 100px;
-}
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-  }
-  
-  .footer-left p {
-    margin: 5px 0;
-    font-size: 14px;
-    text-align: left;
-  }
-  
-  .footer-right p {
-    margin: 5px 0;
-    font-size: 14px;
-    text-align: right;
-  }
-  
-  .social-links {
-    display: flex;
-    gap: 15px;
-    justify-content: flex-end;
-  }
-  
-  .social-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.3s;
-  }
-  
-  .social-links a:hover {
-    color: red; /* Puedes cambiar el color al que prefieras */
-  }
