@@ -23,9 +23,10 @@ header {
 
 .menu li {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Electrolize', sans-serif;
     color: whitesmoke;
     padding-right: 100px;
+    list-style: none;
 }
 
 .menu li a {
