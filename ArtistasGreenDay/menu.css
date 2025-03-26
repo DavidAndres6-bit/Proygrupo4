@@ -19,15 +19,13 @@ header {
 .menu ul {
     display: flex;
     align-items: center;
-    list-style: none;
 }
 
 .menu li {
     text-decoration: none;
-    font-family: 'Electrolize', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: whitesmoke;
     padding-right: 100px;
-    list-style: none;
 }
 
 .menu li a {
