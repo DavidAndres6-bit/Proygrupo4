@@ -312,5 +312,9 @@ body, html {
     overflow-x: hidden; /* Evita que se haga scroll horizontal */
 } 
 footer{
+<<<<<<< HEAD
     margin-top: 800px;
+=======
+    margin-top: 1350px;
+>>>>>>> e79e186f761a71966b76e938715b3e0334f0d951
 }
