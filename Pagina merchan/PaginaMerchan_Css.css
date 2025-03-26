@@ -311,3 +311,6 @@ body, html {
     width: 100%;
     overflow-x: hidden; /* Evita que se haga scroll horizontal */
 } 
+footer{
+    margin-top: 800px;
+}

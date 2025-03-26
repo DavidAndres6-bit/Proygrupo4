@@ -133,7 +133,7 @@ body{
     text-align: center;
     margin: 20px auto;
     max-width: 1000px; /* Tamaño máximo */
-    margin-left: 300px;
+    margin-left: 250px;
     position: absolute;
     top: 1650px;  /*Espacio parte superior*/
     border-radius: 7px;
@@ -175,4 +175,7 @@ html, body {
     background-color: black;
     border: none;
     margin-top: 340px;
+}
+footer{
+    margin-top: 1000px;
 }
